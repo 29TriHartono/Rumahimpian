@@ -1,13 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl md:text-5xl font-bold;
+  }
+  h2 {
+    @apply text-xl md:text-2xl;
+  }
+  p {
+    @apply text-sm;
+  }
+}
+@layer components {
+  .px-setting {
+    @apply px-8 md:px-16 xl:px-32;
+  }
+  .navlink {
+    @apply hover:bg-green-900 hover:text-white p-2;
+  }
+  .header {
+    @apply fixed flex items-center justify-between z-50 w-full px-setting h-14 md:h-20 text-white bg-transparent;
+  }
+  .header-scroll {
+    @apply fixed flex items-center justify-between z-50 w-full px-setting h-20 text-white bg-green-900;
+  }
+  .swiperNext,
+  .swiperPrev {
+    @apply absolute bg-greenColor z-20 h-10 w-10 text-white rounded-full cursor-pointer;
+  }
+  .swiperNext {
+    @apply right-10;
+  }
+  .swiperPrev {
+    @apply left-10 md:left-20 lg:left-32;
+  }
+  .sidebarfixed {
+    @apply relative md:fixed bg-white text-greenColor rounded-md flex items-center flex-col p-4 gap-2  w-80;
+  }
+  .sidebar {
+    @apply md:absolute bottom-0 bg-white text-greenColor rounded-md flex items-center flex-col p-4 gap-2  w-80;
+  }
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
