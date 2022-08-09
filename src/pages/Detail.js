@@ -18,9 +18,9 @@ const Detail = () => {
   window.addEventListener('scroll', FixedSideBar);
   return (
     <>
-      <section className="py-20  flex flex-col bg-gradient-to-b from-greenColor to-bgColor ">
-        <div className="grid grid-cols-3 px-setting gap-4 py-10">
-          <div className="col-span-3 md:col-span-2 shadow-md p-4">
+      <section className="pt-20  flex flex-col bg-green-900">
+        <div className="grid grid-cols-3 px-setting gap-4 py-10 bg-white">
+          <div className="col-span-3 md:col-span-2 shadow-md p-4 ">
             <div className="">
               <img src={DetailSell.imgUrl} className="w-full" alt="" />
             </div>
@@ -49,7 +49,7 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          <div className="h-full col-span-1 flex justify-center relative">
+          <div className="h-full col-span-1 flex justify-center relative   ">
             <div className={fixSidebar ? 'sidebar' : 'sidebarfixed'}>
               <button className="flex items-center justify-center px-4  w-full py-4 gap-4 hover:bg-bgColor ">
                 <FontAwesomeIcon icon={faShoppingCart} />
@@ -66,7 +66,7 @@ const Detail = () => {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative bg-white">
           <ExploreMore liveLink="/temukanrumah" />
         </div>
       </section>

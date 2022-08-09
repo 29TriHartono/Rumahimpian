@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const SearchTemukan = (search) => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full px-setting">
         <div className="flex items-center justify-center md:items-start w-full md:w-fit bg-white text-green-900 rounded-t-md">
           <NavLink to="/dijual" className="navlink">
             Beli

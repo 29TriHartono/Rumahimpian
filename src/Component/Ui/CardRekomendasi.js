@@ -9,7 +9,7 @@ const CardRekomendasi = (props) => {
 
   return (
     <>
-      <div className="overflow-hidden  transition duration-300 group relative shadow-xl bg-bgColor">
+      <div className="overflow-hidden  transition duration-300 group relative shadow-xl ">
         <div className="absolute bg-green-900/80 top-2 px-2 rounded-r-md">
           <h3 className="text-white">{ket}</h3>
         </div>
