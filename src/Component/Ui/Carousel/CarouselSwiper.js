@@ -43,6 +43,8 @@ function CarouselSwiper() {
             modules={[Navigation, Keyboard]}
             className="mySwiper"
             speed={200}
+            preventClicks={false}
+            preventClicksPropagation={false}
             onInit={(swiper) => {
               swiper.params.navigation.prevEl = swiperNavPrevRef.current;
               swiper.params.navigation.nextEl = swiperNavNextRef.current;

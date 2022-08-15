@@ -9,7 +9,7 @@ const Detail = () => {
   const DetailSell = dataJualRumah.find((item) => item.id === id);
   const [fixSidebar, setFixSidebar] = useState(false);
   function FixedSideBar() {
-    if (window.scrollY >= 700) {
+    if (window.scrollY >= 800) {
       setFixSidebar(true);
     } else {
       setFixSidebar(false);
@@ -18,8 +18,8 @@ const Detail = () => {
   window.addEventListener('scroll', FixedSideBar);
   return (
     <>
-      <section className="pt-20  flex flex-col bg-green-900">
-        <div className="grid grid-cols-3 px-setting gap-4 py-10 bg-white">
+      <section className="pt-20  flex flex-col ">
+        <div className="grid grid-cols-3 px-setting gap-4 py-10" id="detail">
           <div className="col-span-3 md:col-span-2 shadow-md p-4 ">
             <div className="">
               <img src={DetailSell.imgUrl} className="w-full" alt="" />
@@ -66,7 +66,7 @@ const Detail = () => {
             </div>
           </div>
         </div>
-        <div className="relative bg-white">
+        <div className="relative">
           <ExploreMore liveLink="/temukanrumah" />
         </div>
       </section>

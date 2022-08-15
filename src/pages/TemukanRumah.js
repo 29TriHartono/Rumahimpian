@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SearchTemukan from '../Component/Ui/SearchTemukan';
 import { dataJualRumah } from '../Asset/Data';
 import CardRekomendasi from '../Component/Ui/CardRekomendasi';
 import { NavLink } from 'react-router-dom';

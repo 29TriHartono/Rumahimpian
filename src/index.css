@@ -29,7 +29,7 @@
   }
   .swiperNext,
   .swiperPrev {
-    @apply absolute bg-greenColor z-20 h-10 w-10 text-white rounded-full cursor-pointer;
+    @apply absolute bg-greenColor z-40 h-10 w-10 text-white rounded-full cursor-pointer;
   }
   .swiperNext {
     @apply right-10;

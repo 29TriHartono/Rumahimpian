@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseChimney, faMoneyBill1Wave } from '@fortawesome/free-solid-svg-icons';
+
 import { NavLink } from 'react-router-dom';
 
 const SearchTemukan = (search) => {
