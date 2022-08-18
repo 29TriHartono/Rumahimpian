@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Rumahimpian/static/css/main.5a70f40f.css",
-    "main.js": "/Rumahimpian/static/js/main.3af9dc67.js",
-    "static/js/787.19ba45ad.chunk.js": "/Rumahimpian/static/js/787.19ba45ad.chunk.js",
+    "main.css": "/Rumahimpian/static/css/main.cbcf09d2.css",
+    "main.js": "/Rumahimpian/static/js/main.a1ef42b6.js",
     "static/media/img-temukan.png": "/Rumahimpian/static/media/img-temukan.c7cdb6c0fe2f2746fe55.png",
     "static/media/bg-konsultasi.png": "/Rumahimpian/static/media/bg-konsultasi.47f9de80d278e6ee9c61.png",
     "static/media/img-header-house.png": "/Rumahimpian/static/media/img-header-house.72d895f074813109acf8.png",
@@ -18,12 +17,11 @@
     "static/media/location-outline.svg": "/Rumahimpian/static/media/location-outline.134abf5c797136e5c715efb63585694f.svg",
     "index.html": "/Rumahimpian/index.html",
     "static/media/logo fb.svg": "/Rumahimpian/static/media/logo fb.9efa143dab7baaf78a547f07f597fd5d.svg",
-    "main.5a70f40f.css.map": "/Rumahimpian/static/css/main.5a70f40f.css.map",
-    "main.3af9dc67.js.map": "/Rumahimpian/static/js/main.3af9dc67.js.map",
-    "787.19ba45ad.chunk.js.map": "/Rumahimpian/static/js/787.19ba45ad.chunk.js.map"
+    "main.cbcf09d2.css.map": "/Rumahimpian/static/css/main.cbcf09d2.css.map",
+    "main.a1ef42b6.js.map": "/Rumahimpian/static/js/main.a1ef42b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a70f40f.css",
-    "static/js/main.3af9dc67.js"
+    "static/css/main.cbcf09d2.css",
+    "static/js/main.a1ef42b6.js"
   ]
 }
