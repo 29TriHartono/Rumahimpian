@@ -37,8 +37,8 @@ const Konsultasi = () => {
         </div>
         <div className="flex flex-col gap-6 bg-white/60 z-10 md:w-1/2 px-4 py-8 md:px-8 md:py-10 w-full text-center rounded-sm">
           <h1 className="text-green-900">Ada Pertanyaan ? </h1>
-          <input className="p-4" type="text" placeholder="email" />
-          <input className="p-4" type="text" placeholder="email" />
+          <input className="px-4 py-2 border-none focus:outline-none text-green-900" type="text" placeholder="email" />
+          <textarea className="px-4 py-2 border-none focus:outline-none text-green-900" placeholder="Message" />
           <button className="bg-green-900 text-white p-2 rounded-sm font-semibold text-xl">Kirim</button>
         </div>
       </div>

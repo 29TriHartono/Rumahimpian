@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Logo from '../Asset/img/Logoo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -57,13 +57,21 @@ const Header = () => {
             ))}
           </ul>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:hidden">
-            <button className="font-semibold">Daftar</button>
-            <button className="bg-white text-green-900 font-semibold px-6 py-2 rounded-sm hover:bg-green-900 hover:text-white transition duration-300">Masuk</button>
+            <Link to="/register">
+              <button className="font-semibold">Daftar</button>
+            </Link>
+            <Link to="/login">
+              <button className="bg-white text-green-900 font-semibold px-6 py-2 rounded-sm hover:bg-green-900 hover:text-white transition duration-300">Masuk</button>
+            </Link>
           </div>
         </div>
         <div className="hidden md:flex items-center justify-center gap-4">
-          <button className="font-semibold">Daftar</button>
-          <button className="bg-white text-green-900 font-semibold px-6 py-2 rounded-sm hover:bg-green-900 hover:text-white transition duration-300">Masuk</button>
+          <Link to="/register">
+            <button className="font-semibold">Daftar</button>
+          </Link>
+          <Link to="/login">
+            <button className="bg-white text-green-900 font-semibold px-6 py-2 rounded-sm hover:bg-green-900 hover:text-white transition duration-300">Masuk</button>
+          </Link>
         </div>
         <div className="cursor-pointer flex md:hidden items-center justify-center z-30" onClick={() => setNavbarOpen(!navbarOpen)}>
           {navbarOpen ? <FontAwesomeIcon icon={faXmark} className="h-6 w-6 text-gray-900 dark:text-slate-200" /> : <FontAwesomeIcon icon={faBars} className="h-6 w-6 text-gray-900 dark:text-slate-200" />}
