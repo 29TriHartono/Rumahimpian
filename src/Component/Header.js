@@ -38,7 +38,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className="header 2xl:w-3/4" ref={headerRef}>
+      <div className="header 2xl:w-3/4 h-20" ref={headerRef}>
         <div className="flex items-center justify-center gap-2 z-30">
           <img src={Logo} alt="" />
           <h2 className="font-semibold">Rumah Impian</h2>

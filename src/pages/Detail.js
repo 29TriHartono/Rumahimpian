@@ -18,13 +18,14 @@ const Detail = () => {
   window.addEventListener('scroll', FixedSideBar);
   return (
     <>
-      <section className="pt-20  flex flex-col ">
+      <section className="pt-20  flex flex-col relative ">
+        <div className="absolute h-1/4 md:h-1/2 rounded-br-full w-full -top-10 bg-greenColor z-0"></div>
         <div className="grid grid-cols-3 px-setting gap-4 py-10" id="detail">
-          <div className="col-span-3 md:col-span-2 shadow-md p-4 ">
+          <div className="col-span-3 md:col-span-2 rounded-sm overflow-hidden bg-white relative ">
             <div className="">
               <img src={DetailSell.imgUrl} className="w-full" alt="" />
             </div>
-            <div className=" flex flex-col gap-6 p-4">
+            <div className=" flex flex-col gap-6 p-4 shadow-sm">
               <h2>{DetailSell.title}</h2>
               <h2>{DetailSell.harga}</h2>
               <h3>{DetailSell.alamat}</h3>

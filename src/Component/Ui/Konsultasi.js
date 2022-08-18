@@ -8,7 +8,7 @@ import logoig from '../../Asset/img/logo-instagram.svg';
 const Konsultasi = () => {
   return (
     <>
-      <div className="min-h-screen px-setting flex flex-col sm:flex-row items-center justify-center xl:justify-between bg-konsultasiBackground bg-cover gap-10 bg-no-repeat bg-center relative">
+      <div className="min-h-screen px-setting flex flex-col sm:flex-row items-center justify-center xl:justify-between bg-konsultasiBackground bg-cover gap-10 bg-no-repeat bg-center relative py-20">
         <div className="absolute inset-0 bg-black/50 z-0"></div>
         <div className="md:w-1/2 text-white z-10">
           <h1>Butuh Konsultasi ? Silahkan Kontak kami, kami siap membantu.</h1>
@@ -35,7 +35,7 @@ const Konsultasi = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 bg-white/50 z-10 md:w-1/2 px-8 py-10 text-center rounded-sm">
+        <div className="flex flex-col gap-6 bg-white/60 z-10 md:w-1/2 px-4 py-8 md:px-8 md:py-10 w-full text-center rounded-sm">
           <h1 className="text-green-900">Ada Pertanyaan ? </h1>
           <input className="p-4" type="text" placeholder="email" />
           <input className="p-4" type="text" placeholder="email" />

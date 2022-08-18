@@ -1,21 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
 import { DataProperti } from '../Asset/DataProperti';
 import CardProperti from '../Component/Ui/CardProperti';
 import SearchTemukan from '../Component/Ui/SearchTemukan';
 const Properti = () => {
+  const [searchData, setSearchData] = useState('');
   return (
     <>
-      <div className="px-setting py-20 flex flex-col gap-10 items-center justify-center">
-        <SearchTemukan />
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4  w-full">
-          {DataProperti.filter((item) => item.title === 'Living Room').map((item) => (
-            <CardProperti key={item.id} item={item} />
-          ))}
-          {DataProperti.filter((item) => item.title === 'Bedroom').map((item) => (
-            <CardProperti key={item.id} item={item} />
-          ))}
-          {DataProperti.filter((item) => item.title === 'Kitchen Set').map((item) => (
+      <div>
+        <div className="bg-temukanBackground bg-no-repeat bg-cover bg-center px-setting flex items-center h-96">
+          <SearchTemukan setSearchData={setSearchData} />
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 w-full px-setting">
+          {DataProperti.filter((item) => {
+            if (searchData === '') {
+              return item;
+            } else if (item.title.toLowerCase().includes(searchData.toLowerCase())) {
+              return item;
+            } else if (item.titletype.toLowerCase().includes(searchData.toLowerCase())) {
+              return item;
+            }
+          }).map((item) => (
             <CardProperti key={item.id} item={item} />
           ))}
         </div>
