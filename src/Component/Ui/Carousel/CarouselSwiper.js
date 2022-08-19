@@ -27,7 +27,7 @@ function CarouselSwiper() {
           <Link to="/properti">Explore More</Link>
         </div>
         <div
-          className="py-20 
+          className="py-4 md:py-10 
       flex items-center justify-center w-full pl-8 md:pl-32 lg:pl-48 2xl:pl-0 "
         >
           <Swiper
@@ -46,8 +46,8 @@ function CarouselSwiper() {
             observer={true}
             observeParents={true}
             parallax={true}
-            preventClicks={false}
-            preventClicksPropagation={false}
+            preventClicks={true}
+            preventClicksPropagation={true}
             onInit={(swiper) => {
               swiper.params.navigation.prevEl = swiperNavPrevRef.current;
               swiper.params.navigation.nextEl = swiperNavNextRef.current;
