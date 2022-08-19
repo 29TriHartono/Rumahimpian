@@ -38,10 +38,10 @@
     @apply left-10 md:left-20 lg:left-32;
   }
   .sidebarfixed {
-    @apply relative md:fixed bg-green-900 text-white rounded-md flex items-center flex-col p-4 gap-2  w-80;
+    @apply relative md:fixed bg-greenColor shadow-md border-2 border-slate-200 text-white rounded-md flex items-center flex-col p-4 gap-2 w-60  lg:w-80;
   }
   .sidebar {
-    @apply md:absolute bottom-0 bg-green-900 text-white rounded-md flex items-center flex-col p-4 gap-2  w-80;
+    @apply md:absolute bottom-0 bg-greenColor shadow-md border-2 border-slate-200 text-white rounded-md flex items-center flex-col p-4 gap-2  w-60 lg:w-80;
   }
 }
 

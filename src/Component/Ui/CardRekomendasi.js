@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faClose } from '@fortawesome/free-solid-svg-icons';
 
 const CardRekomendasi = (props) => {
   const { imgUrl, id, title, alamat, harga, ket, jumlahkt, jumlahkm, luasrumah } = props.item;
-  const [showDetail, setShowDetail] = useState(false);
+  // const [showDetail, setShowDetail] = useState(false);
 
   return (
     <>

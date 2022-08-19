@@ -43,6 +43,9 @@ function CarouselSwiper() {
             modules={[Navigation, Keyboard]}
             className="mySwiper"
             speed={200}
+            observer={true}
+            observeParents={true}
+            parallax={true}
             preventClicks={false}
             preventClicksPropagation={false}
             onInit={(swiper) => {

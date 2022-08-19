@@ -12,6 +12,7 @@ import CardRekomendasi from '../Component/Ui/CardRekomendasi';
 import { dataJualRumah } from '../Asset/Data';
 import { NavLink } from 'react-router-dom';
 import CarouselSwiper from '../Component/Ui/Carousel/CarouselSwiper';
+import { Link } from 'react-router-dom';
 
 const Beranda = () => {
   return (
@@ -25,8 +26,12 @@ const Beranda = () => {
               <span className="font-bold">Rumah Impian</span> hadir untuk temukan rumah terbaik untuk dijual maupun disewa dengan sumber terpercaya
             </p>
             <div className="flex gap-4 items-center">
-              <button className="bg-white/90 font-semibold px-4 py-2 text-green-900 rounded-sm hover:bg-transparent hover:text-white transition duration-300 ">Temukan Rumah</button>
-              <FontAwesomeIcon icon={faAngleRight} className="h-6 text-white/80 hover:text-green-900 transition duration-1x00 cursor-pointer" />
+              <Link to="/temukanrumah">
+                <button className="bg-white/90 font-semibold px-4 py-2 text-green-900 rounded-sm hover:bg-transparent hover:text-white transition duration-300 ">Temukan Rumah</button>
+              </Link>
+              <Link to="/temukanrumah">
+                <FontAwesomeIcon icon={faAngleRight} className="h-6 text-white/80 hover:text-green-900 transition duration-1x00 cursor-pointer" />
+              </Link>
             </div>
           </div>
           <img src={imgHouse} alt="" className="w-3/4 xl:w-auto absolute bottom-0 right-0 z-10" />
@@ -55,7 +60,7 @@ const Beranda = () => {
           </div>
           <div className="grid md:grid-cols-2 xl:grid-cols-4 items-center gap-4 my-10">
             {dataJualRumah
-              .filter((item) => item.ket == 'JUAL')
+              .filter((item) => item.ket === 'JUAL')
               .slice(0, 4)
               .map((item) => (
                 <CardRekomendasi key={item.id} item={item} />
@@ -70,7 +75,7 @@ const Beranda = () => {
           </div>
           <div className="grid md:grid-cols-2 xl:grid-cols-4 items-center gap-4 my-10">
             {dataJualRumah
-              .filter((item) => item.ket == 'SEWA')
+              .filter((item) => item.ket === 'SEWA')
               .slice(0, 4)
               .map((item) => (
                 <CardRekomendasi key={item.id} item={item} />

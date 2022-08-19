@@ -18,10 +18,10 @@ const Detail = () => {
   window.addEventListener('scroll', FixedSideBar);
   return (
     <>
-      <section className="pt-20  flex flex-col relative ">
+      <section className="pt-10 md:pt-16  flex flex-col relative ">
         <div className="absolute h-1/4 md:h-1/2 rounded-br-full w-full -top-10 bg-greenColor z-0"></div>
-        <div className="grid grid-cols-3 px-setting gap-4 py-10" id="detail">
-          <div className="col-span-3 md:col-span-2 rounded-sm overflow-hidden bg-white relative ">
+        <div className="grid md:grid-cols-3 px-setting gap-4 py-10 " id="detail">
+          <div className="col-span-3 md:col-span-2 rounded-sm bg-white relative border-2 border-slate-200 overflow-hidden ">
             <div className="">
               <img src={DetailSell.imgUrl} className="w-full" alt="" />
             </div>
@@ -50,17 +50,17 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          <div className="h-full col-span-1 flex justify-center relative   ">
+          <div className="h-full flex justify-center relative   ">
             <div className={fixSidebar ? 'sidebar' : 'sidebarfixed'}>
-              <button className="flex items-center justify-center px-4  w-full py-4 gap-4 hover:bg-bgColor ">
+              <button className="flex items-center justify-center lg:px-4  w-full py-4 gap-4 hover:bg-bgColor hover:text-green-900 ">
                 <FontAwesomeIcon icon={faShoppingCart} />
                 Hubungi
               </button>
-              <button className="flex items-center justify-center px-4 w-full  py-4 gap-4 hover:bg-bgColor ">
+              <button className="flex items-center justify-center lg:px-4 w-full  py-4 gap-4 hover:bg-bgColor hover:text-green-900 ">
                 <FontAwesomeIcon icon={faShoppingCart} />
                 Hubungi
               </button>
-              <button className="flex items-center justify-center px-4  w-full py-4 gap-4 hover:bg-bgColor ">
+              <button className="flex items-center justify-center lg:px-4  w-full py-4 gap-4 hover:bg-bgColor hover:text-green-900 ">
                 <FontAwesomeIcon icon={faShoppingCart} />
                 Hubungi
               </button>
