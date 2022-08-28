@@ -12,7 +12,7 @@ const CardCarousel = (props) => {
         <h2>{title}</h2>
         <h2>{price}</h2>
       </div>
-      <div className="relative bg-green-900 w-fit p-2 rounded-r-md text-white">Detail</div>
+      {/* <div className="relative bg-green-900 w-fit p-2 rounded-r-md text-white">Detail</div> */}
     </div>
   );
 };

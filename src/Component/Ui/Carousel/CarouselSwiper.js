@@ -23,8 +23,10 @@ function CarouselSwiper() {
     <>
       <div className=" relative">
         <div className="px-setting flex items-center justify-between">
-          <h1>Properti Rumah</h1>
-          <Link to="/properti">Explore More</Link>
+          <h1 className="text-green-900">Properti Rumah</h1>
+          <Link to="/properti" className="bg-green-900 px-4 py-2 text-white rounded-sm text-center">
+            Lihat Semua
+          </Link>
         </div>
         <div
           className="py-4 md:py-10 
@@ -79,8 +81,8 @@ function CarouselSwiper() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <FontAwesomeIcon className="swiperPrev" icon={faAngleLeft} ref={swiperNavPrevRef} />
-          <FontAwesomeIcon className="swiperNext" icon={faAngleRight} ref={swiperNavNextRef} />
+          {/* <FontAwesomeIcon className="swiperPrev" icon={faAngleLeft} ref={swiperNavPrevRef} />
+          <FontAwesomeIcon className="swiperNext" icon={faAngleRight} ref={swiperNavNextRef} /> */}
         </div>
       </div>
     </>

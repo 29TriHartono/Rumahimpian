@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as HomeIcon } from '../../Asset/img/homeicon.svg';
+import { ReactComponent as BathroomIcon } from '../../Asset/img/iconbathroom.svg';
+import { ReactComponent as BedroomIcon } from '../../Asset/img/iconbedroom.svg';
 
 const CardRekomendasi = (props) => {
   const { imgUrl, id, title, alamat, harga, ket, jumlahkt, jumlahkm, luasrumah } = props.item;
@@ -17,18 +20,27 @@ const CardRekomendasi = (props) => {
           <h2 className="font-bold">{harga}</h2>
           <p>{alamat}</p>
 
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-1">
             <div>
-              <div>Icon</div>
-              <div>{jumlahkt}</div>
+              <div className="text-xs">Kamar Tidur</div>
+              <div className="flex items-center gap-2 text-xs mt-1">
+                <BedroomIcon className="w-5 h-5" />
+                <div>{jumlahkt}</div>
+              </div>
             </div>
             <div>
-              <div>Icon</div>
-              <div>{jumlahkm}</div>
+              <div className="text-xs">Kamar Mandi</div>
+              <div className="flex items-center gap-2 text-xs mt-1">
+                <BathroomIcon className="w-5 h-5" />
+                <div>{jumlahkm}</div>
+              </div>
             </div>
             <div>
-              <div>Icon</div>
-              <div>{luasrumah}</div>
+              <div className="text-xs">Luas Rumah</div>
+              <div className="flex items-center gap-2 text-xs mt-1">
+                <HomeIcon className="w-5 h-5" />
+                <div>{luasrumah}</div>
+              </div>
             </div>
           </div>
           <Link
