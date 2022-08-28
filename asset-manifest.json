@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Rumahimpian/static/css/main.957a2bae.css",
-    "main.js": "/Rumahimpian/static/js/main.383af6e7.js",
+    "main.css": "/Rumahimpian/static/css/main.8c127755.css",
+    "main.js": "/Rumahimpian/static/js/main.e01b5884.js",
     "static/media/img-temukan.png": "/Rumahimpian/static/media/img-temukan.c7cdb6c0fe2f2746fe55.png",
     "static/media/bg-konsultasi.png": "/Rumahimpian/static/media/bg-konsultasi.47f9de80d278e6ee9c61.png",
     "static/media/img-header-house.png": "/Rumahimpian/static/media/img-header-house.72d895f074813109acf8.png",
@@ -12,16 +12,19 @@
     "static/media/rumah-5.png": "/Rumahimpian/static/media/rumah-5.3df425f6b3e669521bbb.png",
     "static/media/img-right-header.png": "/Rumahimpian/static/media/img-right-header.8cf4b7e437c608e91b1e.png",
     "static/media/img-left-header.png": "/Rumahimpian/static/media/img-left-header.58646f8dbee304273c66.png",
+    "static/media/homeicon.svg": "/Rumahimpian/static/media/homeicon.809b7911320a45fcdfcfdf0b03cad77d.svg",
     "static/media/logo-instagram.svg": "/Rumahimpian/static/media/logo-instagram.8a7a40f7e20a7faccd0ff0f2869c6ded.svg",
+    "static/media/iconbathroom.svg": "/Rumahimpian/static/media/iconbathroom.1d68b1f6072a53493991a3df76f8b49d.svg",
+    "static/media/iconbedroom.svg": "/Rumahimpian/static/media/iconbedroom.2017dbc5762e4794e2a83f5c50cf4cd9.svg",
     "static/media/call-outline.svg": "/Rumahimpian/static/media/call-outline.0b6ec20aa72f9b62d7f9fafad2d67cff.svg",
     "static/media/location-outline.svg": "/Rumahimpian/static/media/location-outline.134abf5c797136e5c715efb63585694f.svg",
     "index.html": "/Rumahimpian/index.html",
     "static/media/logo fb.svg": "/Rumahimpian/static/media/logo fb.9efa143dab7baaf78a547f07f597fd5d.svg",
-    "main.957a2bae.css.map": "/Rumahimpian/static/css/main.957a2bae.css.map",
-    "main.383af6e7.js.map": "/Rumahimpian/static/js/main.383af6e7.js.map"
+    "main.8c127755.css.map": "/Rumahimpian/static/css/main.8c127755.css.map",
+    "main.e01b5884.js.map": "/Rumahimpian/static/js/main.e01b5884.js.map"
   },
   "entrypoints": [
-    "static/css/main.957a2bae.css",
-    "static/js/main.383af6e7.js"
+    "static/css/main.8c127755.css",
+    "static/js/main.e01b5884.js"
   ]
 }
