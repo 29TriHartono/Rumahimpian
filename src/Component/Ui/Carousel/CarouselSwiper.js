@@ -81,8 +81,8 @@ function CarouselSwiper() {
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* <FontAwesomeIcon className="swiperPrev" icon={faAngleLeft} ref={swiperNavPrevRef} />
-          <FontAwesomeIcon className="swiperNext" icon={faAngleRight} ref={swiperNavNextRef} /> */}
+          <FontAwesomeIcon className="swiperPrev" icon={faAngleLeft} ref={swiperNavPrevRef} />
+          <FontAwesomeIcon className="swiperNext" icon={faAngleRight} ref={swiperNavNextRef} />
         </div>
       </div>
     </>
